@@ -7,13 +7,19 @@
 ---
 
 
-## Быстрый старт
+## Инструкция
 
 ```bash
 git clone https://github.com/feridrz/cat-management-system.git
-cd cat-project
+cd cat-management-system
 cp .env.example .env
-docker-compose up --build -d
+
+docker-compose up -d --build
+docker-compose exec app php artisan key:generate
+
+docker-compose exec app composer install
+
+docker-compose exec app php artisan migrate:fresh --seed
 ```
 
 
