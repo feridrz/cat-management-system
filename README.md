@@ -9,6 +9,9 @@
 
 ## Инструкция
 
+Для начала вам нужно установить **Docker**.  
+Если он уже установлен, выполните следующие шаги:
+
 ```bash
 git clone https://github.com/feridrz/cat-management-system.git
 cd cat-management-system
